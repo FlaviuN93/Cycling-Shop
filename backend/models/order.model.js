@@ -1,0 +1,97 @@
+import mongoose from 'mongoose';
+import validator from 'validator';
+
+const orderSchema = mongoose.Schema(
+	{
+		user: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'User' },
+		orderItems: [
+			{
+				name: { type: String, required: true },
+				qty: { type: Number, required: true },
+				image: { type: String, required: true },
+				price: {
+					type: Number,
+					required: true,
+				},
+				product: {
+					type: mongoose.Schema.Types.ObjectId,
+					required: true,
+					ref: 'Product',
+				},
+			},
+		],
+		shippingAddress: {
+			name: {
+				type: String,
+				required: [true, 'You must write your name'],
+				validate: [
+					validator.isAlpha,
+					'The name can only contain alphabetic characters.',
+				],
+			},
+
+			phone: {
+				type: Number,
+			},
+			email: {
+				type: String,
+				required: [true, 'You must enter your email.'],
+				unique: true,
+				lowercase: true,
+				validate: [validator.isEmail, 'You must enter a valid email'],
+			},
+			city: {
+				type: String,
+				required: true,
+			},
+			address: {
+				street: { type: String, required: true },
+				number: { type: Number, required: true },
+				apartment: { type: Number || String },
+				postalcode: { type: Number },
+			},
+		},
+		paymentMethod: {
+			type: String,
+			required: true,
+		},
+		deliveryMethod: {
+			type: String,
+			required: true,
+		},
+		paymentResult: {
+			id: { type: String },
+			status: { type: String },
+			update_time: { type: String },
+			email: { type: String },
+		},
+		itemsPrice: {
+			type: Number,
+			required: true,
+			default: 0.0,
+		},
+		taxPrice: {
+			type: Number,
+			required: true,
+			default: 0.0,
+		},
+		shippingPrice: {
+			type: Number,
+			required: true,
+			default: 0.0,
+		},
+		totalPrice: {
+			type: Number,
+			required: true,
+			default: 0.0,
+		},
+		isPaid: { type: Boolean, required: true, default: false },
+		paidAt: { type: Date },
+		isDelivered: { type: Boolean, required: true, default: false },
+		deliveredAt: { type: Date },
+	},
+	{ timestamps: true }
+);
+
+const Order = mongoose.model('Order', orderSchema);
+export default Order;
