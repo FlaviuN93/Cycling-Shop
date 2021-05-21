@@ -23,6 +23,8 @@ app.all('*', (req, res, next) => {
 	next(new AppError(`Can't find ${req.originalUrl} on this website!`, 404));
 });
 
+app.use(globalErrorHandler);
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(

@@ -8,6 +8,7 @@ class AppError extends Error {
 		this.isOperational = true;
 		// only send operational errors back to the client which have this boolean value true
 
+		Error.captureStackTrace(this, this.constructor);
 		//capturing the stack trace helps us identify where the error occured in the code
 	}
 }
