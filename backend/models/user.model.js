@@ -9,15 +9,16 @@ const UserSchema = mongoose.Schema({
 		required: [true, 'A User must have a name'],
 		minlength: [4, 'A User name has to have a minimum of 4 characters'],
 		maxlength: [20, 'A User name has to have a maximum of 20 characters'],
-		validate: [
-			validator.isAlphanumeric,
-			'A User name must only contain alphabetic characters or numbers',
-		],
+
+		// validate: [
+		// 	validator.isAlphanumeric,
+		// 	'A User name must only contain alphabetic characters or numbers',
+		// ],
 	},
 	email: {
 		type: String,
 		required: [true, 'A User must have an email'],
-		unique: true,
+		// unique: true,
 		lowercase: true,
 		validate: [validator.isEmail, 'Please provide a valid email'],
 	},
@@ -33,7 +34,6 @@ const UserSchema = mongoose.Schema({
 	},
 	passwordConfirm: {
 		type: String,
-		required: [true, 'Check if the password has been written correctly'],
 		// validate: {
 		// 	validator: function (pass) {
 		// 		return pass === this.password;

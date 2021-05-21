@@ -22,6 +22,11 @@ const productSchema = mongoose.Schema(
 			type: Number,
 			min: 1,
 			max: 5,
+			default: 0,
+		},
+		category: {
+			type: String,
+			required: true,
 		},
 		numReviews: { type: Number, required: true, default: 0 },
 		ratingsAverage: {
@@ -36,16 +41,17 @@ const productSchema = mongoose.Schema(
 			mainDetails: {
 				brand: { type: String, required: true },
 				categorie: { type: String, required: true },
-				marime: {
-					type: String,
-					required: true,
-					enum: {
-						values: ['S', 'M', 'L'],
-						message: 'Dimensions are either S, M, L',
+				marime: [
+					{
+						type: String,
+						required: true,
+						enum: {
+							values: ['S', 'M', 'L', 'XL'],
+							message: 'Dimensions are either S, M, L, XL',
+						},
 					},
-				},
+				],
 				greutate: { type: Number },
-				culori: [{ type: String }],
 			},
 			cadru: {
 				materialCadru: { type: String },
