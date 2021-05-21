@@ -11,7 +11,7 @@ const products = [
 			mainDetails: {
 				brand: 'CROSS',
 				categorie: 'Mountain Bike',
-				marime: ['S', 'M', 'L'],
+				marime: ['S', 'M', 'L', 'XL'],
 				greutate: 23,
 			},
 			cadru: {
