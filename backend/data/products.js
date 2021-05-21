@@ -51,7 +51,7 @@ const products = [
 			mainDetails: {
 				brand: 'Merida',
 				categorie: 'Mountain Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 23,
 			},
 			cadru: {
@@ -94,7 +94,7 @@ const products = [
 			mainDetails: {
 				brand: 'SPECIALIZED',
 				categorie: 'Road Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 15,
 			},
 			cadru: {
@@ -137,7 +137,7 @@ const products = [
 			mainDetails: {
 				brand: 'Merida',
 				categorie: 'Trekking Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 22,
 			},
 			cadru: {
@@ -179,7 +179,7 @@ const products = [
 			mainDetails: {
 				brand: 'Cross',
 				categorie: 'City Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 24,
 			},
 			cadru: {
@@ -220,7 +220,7 @@ const products = [
 			mainDetails: {
 				brand: 'SPECIALIZED',
 				categorie: 'City Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 22,
 			},
 			cadru: {
@@ -266,7 +266,7 @@ const products = [
 			mainDetails: {
 				brand: 'Cannondale',
 				categorie: 'Mountain Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 15,
 			},
 			cadru: {
@@ -304,7 +304,7 @@ const products = [
 			mainDetails: {
 				brand: 'Merida',
 				categorie: 'Mountain Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 14,
 			},
 			cadru: {
@@ -342,7 +342,7 @@ const products = [
 			mainDetails: {
 				brand: 'Merida',
 				categorie: 'Trekking Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 12,
 			},
 			cadru: {
@@ -381,7 +381,7 @@ const products = [
 			mainDetails: {
 				brand: 'Cross',
 				categorie: 'City Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 14,
 			},
 			cadru: {
@@ -419,7 +419,7 @@ const products = [
 			mainDetails: {
 				brand: 'Cannondale',
 				categorie: 'City Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 14,
 			},
 			cadru: {
@@ -457,7 +457,7 @@ const products = [
 			mainDetails: {
 				brand: 'Cannondale',
 				categorie: 'Road Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 9,
 			},
 			cadru: {
@@ -498,7 +498,7 @@ const products = [
 			mainDetails: {
 				brand: 'Specialized',
 				categorie: 'Road Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 10,
 			},
 			cadru: {
@@ -536,7 +536,7 @@ const products = [
 			mainDetails: {
 				brand: 'Cube',
 				categorie: 'Trekking Bike',
-				marime: ['S', 'M', 'L', 'XL'],
+				marime: ['S', 'M', 'L'],
 				greutate: 14,
 			},
 			cadru: {
