@@ -41,7 +41,7 @@ const products = [
 	},
 	{
 		name: 'MERIDA EONE-FORTY 500 XL 2021',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/Merida_eONE-FORTY_500_grnred_MY2021.png'],
 		rating: 4.5,
 		numReviews: 4,
 		category: 'Electric Bike',
@@ -84,7 +84,7 @@ const products = [
 	},
 	{
 		name: 'SPECIALIZED TURBO CREO SL COMP CARBON GREEN/BLACK',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/specialized_turbo_carbon_green_black_2020.jpg'],
 		rating: 4.5,
 		numReviews: 2,
 		category: 'Electric Bike',
@@ -127,7 +127,7 @@ const products = [
 	},
 	{
 		name: 'MERIDA ESPRESSO 200 EQ LADY S(47) ALBASTRU (ARGINTIU) 2019',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/merida-eSPRESSO_L_200_noEQ_bluslv_MY2019_2.jpg'],
 		rating: 5,
 		numReviews: 7,
 		category: 'Electric Bike',
@@ -169,7 +169,7 @@ const products = [
 	},
 	{
 		name: 'CROSS ELEGRA LS 28" E-CITY - 450MM',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/Cross_Elegra_IGH_SHIMANO.jpg'],
 		rating: 5,
 		numReviews: 7,
 		category: 'Electric Bike',
@@ -210,7 +210,7 @@ const products = [
 	},
 	{
 		name: 'SPECIALIZED TURBO VADO SL 4.0 ',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/specialized-turbo-vado-sl-4.0.jpg'],
 		rating: 3,
 		numReviews: 2,
 		category: 'Electric Bike',
@@ -256,7 +256,7 @@ const products = [
 	},
 	{
 		name: 'CANNONDALE TRAIL 5 20 XL GRAFIT 2021',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/cannondale-trail-5-2021-graphite.jpg'],
 		rating: 4,
 		numReviews: 3,
 		category: 'Bike',
@@ -294,7 +294,7 @@ const products = [
 	},
 	{
 		name: 'MERIDA BIG NINE 100-2X M (17") BRONZ|ALBASTRU 2021',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/Merida_MTB_BIG_NINE_100_brzblu_MY2021.png'],
 		rating: 5,
 		numReviews: 10,
 		category: 'Bike',
@@ -332,7 +332,7 @@ const products = [
 	},
 	{
 		name: 'MERIDA CROSSWAY XT-EDITION NEGRU|ARGINTIU MAT 2021',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/Merida_CROSSWAY_XT-EDITION_blkslv_MY2021.jpg'],
 		rating: 4.5,
 		numReviews: 7,
 		category: 'Bike',
@@ -371,7 +371,7 @@ const products = [
 	},
 	{
 		name: 'CROSS QUEST MAN- 28" City Bike',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/Cross_Quest_Man_Trekking_1.jpg'],
 		rating: 4.5,
 		numReviews: 7,
 		category: 'Bike',
@@ -409,7 +409,7 @@ const products = [
 	},
 	{
 		name: 'CANNONDALE TESORO MIXTE 2 55CM METEOR GRAFIT 2020',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/cannondale-tesoro-mixte-2-2020.jpg'],
 		rating: 4,
 		numReviews: 12,
 		category: 'Bike',
@@ -447,7 +447,7 @@ const products = [
 	},
 	{
 		name: 'CANNONDALE TOPSTONE CARBON 5 GRAPHITE 2021',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/Cannondale Road Bike.png'],
 		rating: 5,
 		numReviews: 9,
 		category: 'Bike',
@@ -486,7 +486,9 @@ const products = [
 	},
 	{
 		name: 'SPECIALIZED DIVERGE E5 - SATIN BLACK/CHARCOAL CAMO 52',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: [
+			'../images/SPECIALIZED-Diverge-E5-Satin-Black-Charcoal-Camo_1.jpg',
+		],
 		rating: 4,
 		numReviews: 12,
 		category: 'Bike',
@@ -524,7 +526,7 @@ const products = [
 	},
 	{
 		name: 'Cube Nature Iridium/Black 28" 2021',
-		images: ['../images/36190_9435_Quantum_29 - 1.png'],
+		images: ['../images/cube-nature-iridium-black-28-2021.jpeg'],
 		rating: 4,
 		numReviews: 12,
 		category: 'Bike',
