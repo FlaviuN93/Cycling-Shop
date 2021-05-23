@@ -8,6 +8,13 @@ import userRoutes from './routes/userRoutes.js';
 import AppError from './utils/appError.js';
 import { globalErrorHandler } from './controller/errorController.js';
 
+process.on('uncaughtException', (err) => {
+	console.log('Uncaught Exception! Shutting down...');
+	console.log(err.name, err.message);
+
+	process.exit(1);
+});
+
 dotenv.config();
 connectDB();
 const app = express();
@@ -27,9 +34,17 @@ app.use(globalErrorHandler);
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(
+const server = app.listen(
 	PORT,
 	console.log(
 		`Server running in ${process.env.NODE_ENV} on port ${PORT}`.yellow.bold
 	)
 );
+
+process.on('unhandledRejection', (err) => {
+	console.log(err.name, err.message);
+	console.log('Unhandled Rejection! Shutting down...');
+	server.close(() => {
+		process.exit(1);
+	});
+});
