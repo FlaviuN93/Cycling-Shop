@@ -1,5 +1,5 @@
 import express from 'express';
-import Product from '../models/productModel.js';
+import Product from '../models/product.model.js';
 import AppError from '../utils/appError.js';
 import catchAsync from '../utils/catchAsync.js';
 

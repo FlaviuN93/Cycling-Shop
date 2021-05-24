@@ -2,29 +2,37 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Row, Col } from 'react-bootstrap';
 
-import Header from '../components/Header';
+import Header from '../components/PageComponents/Header';
+
+import LoadingSpinner from '../components/UIComponents/LoadingSpinner';
+import OverviewProducts from '../components/PageComponents/OverviewProducts';
 
 const HomePage = () => {
-	const [users, setUsers] = useState([]);
+	const [products, setProducts] = useState([]);
 
-	// useEffect(() => {
-	// 	const fetchUsers = async () => {
-	// 		const { data } = await axios.get('/api/users');
-	// 		console.log(data);
-	// 		setUsers(data);
-	// 	};
-	// 	fetchUsers();
-	// }, []);
+	useEffect(() => {
+		const fetchProducts = async () => {
+			const { data } = await axios.get('/api/products');
+			console.log(data);
+			setProducts(data);
+		};
+		fetchProducts();
+	}, []);
 
 	return (
 		<>
+			<LoadingSpinner />
 			<Header />
+			<OverviewProducts />
 			<Row>
-				{users.map((user) => (
-					<Col key={user.id}>
-						<h3>{user.name}</h3>
-					</Col>
-				))}
+				{products.map(
+					(product, index) =>
+						index < 5 && (
+							<Col key={product.id}>
+								<h3>{product.name}</h3>
+							</Col>
+						)
+				)}
 			</Row>
 		</>
 	);

@@ -1,11 +1,13 @@
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React from 'react';
 import HomePage from './pages/HomePage';
 import './App.scss';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 function App() {
 	return (
 		<Router>
 			<main className='main'>
-				<div className='container'>
+				<div className='main_container'>
 					<Route path='/' component={HomePage} />
 
 					<h2>Hi</h2>

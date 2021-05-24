@@ -1,0 +1,16 @@
+@import '../../index.scss';
+
+.card_container {
+	width: 19rem;
+	height: 28.5rem;
+	border: 1px solid $color-grey;
+	border-radius: 25px;
+	padding: 0.35rem;
+
+	.card_product {
+		background: rgba(#ffff, 0.25);
+		border-radius: 25px;
+		overflow: hidden;
+		height: 100%;
+	}
+}

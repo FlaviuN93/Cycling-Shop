@@ -1,6 +1,6 @@
 import express from 'express';
 import catchAsync from '../utils/catchAsync.js';
-import User from '../models/userModel.js';
+import User from '../models/user.model.js';
 
 // @description Fetch all users
 // @route     Get /api/users
