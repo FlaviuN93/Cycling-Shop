@@ -9,6 +9,7 @@ import catchAsync from '../utils/catchAsync.js';
 
 export const getProducts = catchAsync(async (req, res, next) => {
 	const products = await Product.find({});
+
 	res.json(products);
 });
 

@@ -15,8 +15,8 @@ const productSchema = mongoose.Schema(
 			type: String,
 			required: true,
 		},
-		images: [{ type: String, required: true }],
-		cardImages: [{ type: String, required: true }],
+		image: { type: String, required: true },
+		cardImage: { type: String, required: true },
 		reviews: [reviewSchema],
 		rating: {
 			type: Number,

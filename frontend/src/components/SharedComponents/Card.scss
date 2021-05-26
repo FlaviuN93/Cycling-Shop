@@ -7,10 +7,23 @@
 	border-radius: 25px;
 	padding: 0.35rem;
 
+	&:not(:first-child) {
+		margin-left: 4rem;
+	}
+
 	.card_product {
 		background: rgba(#ffff, 0.25);
 		border-radius: 25px;
 		overflow: hidden;
 		height: 100%;
+		display: flex;
+		align-content: center;
+		flex-direction: column;
+		padding: 1rem;
+	}
+
+	.img {
+		align-self: center;
+		width: 100%;
 	}
 }

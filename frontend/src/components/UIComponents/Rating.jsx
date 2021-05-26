@@ -3,7 +3,7 @@ import React from 'react';
 const Rating = ({ value, color }) => {
 	return (
 		<div className='rating'>
-			<span className={color}>
+			<span style={{ color }}>
 				<i
 					className={
 						value >= 1
@@ -13,7 +13,7 @@ const Rating = ({ value, color }) => {
 							: 'far fa-star'
 					}></i>
 			</span>
-			<span className={color}>
+			<span style={{ color }}>
 				<i
 					className={
 						value >= 2
@@ -23,7 +23,7 @@ const Rating = ({ value, color }) => {
 							: 'far fa-star'
 					}></i>
 			</span>
-			<span className={color}>
+			<span style={{ color }}>
 				<i
 					className={
 						value >= 3
@@ -33,7 +33,7 @@ const Rating = ({ value, color }) => {
 							: 'far fa-star'
 					}></i>
 			</span>
-			<span className={color}>
+			<span style={{ color }}>
 				<i
 					className={
 						value >= 4
@@ -43,7 +43,7 @@ const Rating = ({ value, color }) => {
 							: 'far fa-star'
 					}></i>
 			</span>
-			<span className={color}>
+			<span style={{ color }}>
 				<i
 					className={
 						value >= 5
@@ -55,6 +55,10 @@ const Rating = ({ value, color }) => {
 			</span>
 		</div>
 	);
+};
+
+Rating.defaultProps = {
+	color: '#f2ceae',
 };
 
 export default Rating;
