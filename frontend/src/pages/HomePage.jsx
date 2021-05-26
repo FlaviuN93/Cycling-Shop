@@ -1,23 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
 
 import Header from '../components/PageComponents/Header';
-
 import LoadingSpinner from '../components/UIComponents/LoadingSpinner';
 import OverviewProducts from '../components/PageComponents/OverviewProducts';
+import { getProductList } from '../redux/productsReducer/product.action';
 
 const HomePage = () => {
-	const [products, setProducts] = useState([]);
-
+	const dispatch = useDispatch();
+	const { products } = useSelector((state) => state.productList);
 	useEffect(() => {
-		const fetchProducts = async () => {
-			const { data } = await axios.get('/api/products');
-			console.log(data);
-			setProducts(data);
-		};
-		fetchProducts();
-	}, []);
+		dispatch(getProductList());
+	}, [dispatch]);
 
 	return (
 		<>

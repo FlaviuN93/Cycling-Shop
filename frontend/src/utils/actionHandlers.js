@@ -1,15 +1,31 @@
-import reddeck, { apiStateCreator } from 'reddeck';
-
 function setPending(state) {
 	return {
 		...state,
-		api: apiStateCreator({ pending: true }),
+		loading: true,
 	};
 }
 
 function setError(state, action) {
 	return {
 		...state,
-		api: apiStateCreator({ error: action.payload }),
+		loading: false,
+		error: action.payload,
 	};
 }
+
+function setSuccess(state) {
+	return {
+		...state,
+		success: true,
+	};
+}
+
+const setPayload = (path) => (state, action) => {
+	return {
+		...state,
+		loading: false,
+		[path]: action.payload,
+	};
+};
+
+export { setError, setPayload, setSuccess, setPending };
